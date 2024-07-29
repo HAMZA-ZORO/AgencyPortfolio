@@ -1029,30 +1029,6 @@
   
   
   
-    /**
-     * BLOG
-     */
-  
-    .blog .grid-list {
-      grid-template-columns: 1fr 1fr;
-      row-gap: 20px;
-    }
-  
-    .blog .grid-list > li:first-child {
-      grid-column: 1 / 2;
-      grid-row: 1 / 5;
-    }
-  
-    .blog-card:not(.grid) { height: 100%; }
-  
-    .blog-card .card-content { padding-block: 10px; }
-  
-    .blog-card:not(.grid) .card-content { padding: 25px; }
-  
-    .blog-card.grid .h3 { --fs-3: 2rem; }
-  
-    .blog-card .time { --fs-6: 1.6rem; }
-  
   
   
     /**
