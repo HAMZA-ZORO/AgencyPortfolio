@@ -2,7 +2,7 @@
 :root {
 /* hsl(248, 51%, 28%)   (224, 100%, 50%) */
     --safety-orange: hsl(224, 100%, 50%);
-    --lavender-gray: hsl(230, 19%, 81%);
+    --lavender-gray: 0, 19%hsl(23, 81%);
     --persian-rose: hsl(328, 100%, 59%);
     --red-crayola: hsl(224, 100%, 50%);
     --eerie-black: hsl(240, 6%, 10%);
@@ -127,7 +127,8 @@
   }
   
   body {
-    background-color: var(--white-1);
+    background-color:#C6DABF
+    ;
     color: var(--gray-web);
     font-size: 1.6rem;
     line-height: 1.8;
@@ -175,12 +176,13 @@
   }
   
   .btn-primary {
-    background-image: var(--gradient);
+    background-color: #114B5F
+    ;
     background-size: 1000%;
 
   }
   
-  .btn-primary:is(:hover, :focus) { background-position: bottom right; }
+  .btn-primary:is(:hover, :focus) { background-color:#1A946F ; }
   
   .btn-secondary {
     background-color: var(--white-1);
@@ -261,13 +263,6 @@
   }
   
   
-  .nav-toggle-btn { font-size: 40px; }
-  
-  .nav-toggle-btn.active .open,
-  .nav-toggle-btn .close { display: none; }
-  
-  .nav-toggle-btn .open,
-  .nav-toggle-btn.active .close { display: block; }
   
   .navbar {
     position: absolute;
@@ -367,7 +362,10 @@
     max-height: 100px;
     position: relative;
     top: -110px;
-    background-color: black;
+    background-color:white;
+
+
+    ;
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
@@ -459,7 +457,8 @@
   
   /* Testimonials Section */
 .testimonials {
-  background-color: #f8f8f8;
+  background-color: #C6DABF
+  ;
   padding: 50px 0;
 }
 
@@ -550,7 +549,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--black);
-    opacity: 0.5;
+    opacity: 0.1;
     transition: var(--transition-1);
   }
   
@@ -587,7 +586,7 @@
     #ABOUT
   \*-----------------------------------*/
   
-  .about { background-color: var(--white-2); }
+  .about { background-color: #C6DABF }
   
   .about-banner {
     position: relative;
@@ -676,7 +675,8 @@
     #CONTACT
   \*-----------------------------------*/
   
-  .contact { background-color: black; }
+  .contact { background-color: #1A946F
+    ; }
   
   .contact .section-text { margin-block: 5px 35px; }
   
@@ -975,9 +975,9 @@
       gap: 30px;
     }
   
-    .navbar-link { position: relative; }
+    .navbar-link { position: relative; color: #fff;}
   
-    .navbar-link:is(:hover, :focus) { color: var(--eerie-black); }
+    .navbar-link:is(:hover, :focus) { color: white; }
   
     .navbar-link::after {
       content: "";
@@ -986,7 +986,7 @@
       left: 0;
       width: 100%;
       height: 2px;
-      background-image: var(--gradient);
+      background-color: #F3E8D2;
       transform: scaleX(0);
       transform-origin: left;
       transition: var(--transition-2);
