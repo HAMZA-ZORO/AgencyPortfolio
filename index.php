@@ -21,7 +21,7 @@
           $currentDateTime = $dateTime->format('Y-m-d\TH:i:s');
           $endDateTime = $dateTime->add(new DateInterval('PT1H'))->format('Y-m-d\TH:i:s');
       
-          $credentials = __DIR__ . '/credentials2.json';
+          $credentials = __DIR__ . '/credentials.json';
           require __DIR__ . '/vendor/autoload.php';
       
           $client = new Google_Client();
@@ -60,7 +60,7 @@
       
           // Insert the event
           try {
-              $service->events->insert('zoroom637@gmail.com', $event);
+              $service->events->insert('hamzamahmoud4902@gmail.com', $event);
               echo 'Event created: ' . $event->htmlLink;
           } catch (Google_Service_Exception $e) {
               // Handle duplicate event error
